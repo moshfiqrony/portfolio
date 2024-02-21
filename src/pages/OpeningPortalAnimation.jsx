@@ -1,14 +1,20 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import HomeButton from '../components/HomeButton';
 import { PrimaryButton, TextButton } from '../components/common/Buttons';
 
 export default function OpeningPortalAnimation() {
     const [isOpen, setIsOpen] = useState(false);
+    const buttonRef = useRef(null);
+    const buttonRect = buttonRef.current?.getBoundingClientRect();
 
     return (
-        <div className="p-4 flex items-center justify-center h-screen">
-            <PrimaryButton onClick={() => setIsOpen(true)}>
+        <div className="p-4 flex items-start justify-center h-screen">
+            <PrimaryButton
+                ref={buttonRef}
+                className="mt-[120px]"
+                onClick={() => setIsOpen(true)}
+            >
                 Opening portal animation
             </PrimaryButton>
 
@@ -17,8 +23,8 @@ export default function OpeningPortalAnimation() {
                     initial={{
                         opacity: 0,
                         scale: 0,
-                        x: '-50%',
-                        y: '-50%',
+                        x: -buttonRect.top,
+                        y: -buttonRect.left,
                     }}
                     animate={{
                         opacity: 1,
@@ -28,10 +34,8 @@ export default function OpeningPortalAnimation() {
                     }}
                     transition={{
                         ease: 'easeInOut',
-                        originX: 0,
-                        originY: 0,
                     }}
-                    className="absolute flex-col flex items-center justify-center top-0 left-0 z-[999999] max-h-screen h-screen w-full bg-white"
+                    className="fixed flex-col flex items-center justify-center z-[999999] max-h-screen h-screen w-full bg-white"
                 >
                     <div className="max-w-[512px] flex gap-4 flex-col">
                         <p className="text-lg font-medium">
