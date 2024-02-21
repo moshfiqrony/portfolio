@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export default function OpeningPortalAnimation() {
-    return <div>Opening Portal Animation</div>;
+    return <motion.div>Opening Portal Animation</motion.div>;
 }
