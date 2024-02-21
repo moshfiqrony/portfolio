@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import HomeButton from '../components/HomeButton';
 import { PrimaryButton, TextButton } from '../components/common/Buttons';
 
 export default function OpeningPortalAnimation() {
@@ -75,6 +76,8 @@ export default function OpeningPortalAnimation() {
                     </TextButton>
                 </motion.div>
             )}
+
+            <HomeButton />
         </div>
     );
 }
