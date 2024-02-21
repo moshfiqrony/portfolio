@@ -2,18 +2,20 @@ import { NavLink } from 'react-router-dom';
 
 export default function Home() {
     return (
-        <div class="main-wrapper">
-            <div>
-                <h1 class="text-center">Hi I am Md. Moshfiqur Rahman Rony</h1>
-                <p class="text-center">
+        <div class="h-screen max-w-[580px] m-auto p-5">
+            <div className="my-8">
+                <h1 class="text-center text-3xl font-bold">
+                    Hi I am Md. Moshfiqur Rahman Rony
+                </h1>
+                <p class="text-center text-lg">
                     Currently working as a Software engineer at{' '}
                     <a href="https://twitter.com/worklife_hq">Worklife, Inc.</a>
                 </p>
             </div>
 
             <div>
-                <h3>About me</h3>
-                <ul>
+                <h3 className="text-xl font-semibold my-4">About me</h3>
+                <ul className="list-disc ml-8">
                     <li>Love to talk on trending technologies.</li>
                     <li>Insanely attracted to Spacex.</li>
                     <li>Die hard fan of RDJ.</li>
@@ -23,8 +25,8 @@ export default function Home() {
             </div>
 
             <div>
-                <h3>Work & Interest</h3>
-                <ul>
+                <h3 className="text-xl font-semibold my-4">Work & Interest</h3>
+                <ul className="list-disc ml-8">
                     <li>I love to work full stack. </li>
                     <li>
                         I mostly work on JavaScript, Python and Bash. The
@@ -55,8 +57,8 @@ export default function Home() {
             </div>
 
             <div>
-                <h3>Social accounts</h3>
-                <ul>
+                <h3 className="text-xl font-semibold my-4">Social accounts</h3>
+                <ul className="list-disc ml-8">
                     <li>
                         <a href="https://github.com/moshfiqrony">GitHub</a>
                     </li>
@@ -77,8 +79,8 @@ export default function Home() {
             </div>
 
             <div>
-                <h3>Portfolio</h3>
-                <ul>
+                <h3 className="text-xl font-semibold my-4">Portfolio</h3>
+                <ul className="list-disc ml-8">
                     <li>
                         <NavLink to="/opening-portal-animation">
                             Opening portal animation
