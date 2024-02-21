@@ -1,0 +1,26 @@
+:root {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 20px;
+}
