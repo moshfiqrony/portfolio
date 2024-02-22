@@ -1,7 +1,8 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css';
+import OpeningPortalAnimation from './pages/Components/OpeningPortalAnimation';
 import Home from './pages/Home';
-import OpeningPortalAnimation from './pages/OpeningPortalAnimation';
+import UseDisclosure from './pages/Hooks/UseDisclosure';
 
 const router = createBrowserRouter([
     {
@@ -9,8 +10,26 @@ const router = createBrowserRouter([
         element: <Home />,
     },
     {
-        path: '/opening-portal-animation',
-        element: <OpeningPortalAnimation />,
+        path: '/components',
+        children: [
+            {
+                path: 'opening-portal-animation',
+                element: <OpeningPortalAnimation />,
+            },
+        ],
+    },
+    {
+        path: '/hooks',
+        children: [
+            {
+                path: 'use-disclosure',
+                element: <UseDisclosure />,
+            },
+        ],
+    },
+    {
+        path: '*',
+        element: <div>Not found</div>,
     },
 ]);
 

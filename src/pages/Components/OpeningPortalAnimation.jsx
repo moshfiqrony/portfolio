@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
-import HomeButton from '../components/HomeButton';
-import { PrimaryButton, TextButton } from '../components/common/Buttons';
+import HomeButton from '../../components/HomeButton';
+import { PrimaryButton, TextButton } from '../../components/common/Buttons';
 
 export default function OpeningPortalAnimation() {
     const [isOpen, setIsOpen] = useState(false);

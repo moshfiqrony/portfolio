@@ -1,14 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import content from './content.json';
 
 export default function Home() {
     return (
         <div className="h-screen overflow-auto">
-            <div class=" max-w-[580px] m-auto p-5">
+            <div className=" max-w-[580px] m-auto p-5">
                 <div className="my-8">
-                    <h1 class="text-center text-3xl font-bold">
+                    <h1 className="text-center text-3xl font-bold">
                         Hi I am Md. Moshfiqur Rahman Rony
                     </h1>
-                    <p class="text-center text-lg">
+                    <p className="text-center text-lg">
                         Currently working as a Software engineer at{' '}
                         <a href="https://twitter.com/worklife_hq">
                             Worklife, Inc.
@@ -95,11 +96,15 @@ export default function Home() {
                         RND/Playground/Portfolio
                     </h3>
                     <ul className="list-disc ml-8">
-                        <li>
-                            <NavLink to="/opening-portal-animation">
-                                Opening portal animation
-                            </NavLink>
-                        </li>
+                        {content.rnd_playground_portfolio.projects.map(
+                            (project) => (
+                                <li key={project.id}>
+                                    <Link to={project.link}>
+                                        {project.title}
+                                    </Link>
+                                </li>
+                            )
+                        )}
                     </ul>
                 </div>
             </div>
