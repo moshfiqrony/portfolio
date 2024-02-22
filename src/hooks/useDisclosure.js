@@ -26,7 +26,7 @@ export default function useDisclosure(delay = 0) {
     const onToggle = useCallback(
         () =>
             setState((prev) => {
-                if (prev) {
+                if (prev === 'OPEN') {
                     onClose();
                 } else {
                     onOpen();
