@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import HomeButton from '../../components/HomeButton';
 import { PrimaryButton } from '../../components/common/Buttons';
 import CodeBlock from '../../components/common/CodeBlock';
 import ExternalLink from '../../components/common/ExternalLink';
@@ -130,6 +131,7 @@ export default function UseDisclosure() {
                     </ExternalLink>
                 </Section>
             </div>
+            <HomeButton />
         </Layout>
     );
 }
