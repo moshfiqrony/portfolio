@@ -12,6 +12,12 @@
                 "title": "Opening portal animation",
                 "description": "A simple opening portal animation using CSS and HTML",
                 "link": "/components/opening-portal-animation"
+            },
+            {
+                "id": "position-animation-using-anchor",
+                "title": "Position animation using anchor",
+                "description": "A simple position animation using anchor",
+                "link": "/components/position-animation-using-anchor"
             }
         ]
     }

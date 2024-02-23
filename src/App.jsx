@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css';
 import OpeningPortalAnimation from './pages/Components/OpeningPortalAnimation';
+import PositionAnimationUsingAnchor from './pages/Components/PositionAnimationUsingAnchor';
 import Home from './pages/Home';
 import UseDisclosure from './pages/Hooks/UseDisclosure';
 
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
                 path: 'opening-portal-animation',
                 element: <OpeningPortalAnimation />,
             },
+            {
+                path: 'position-animation-using-anchor',
+                element: <PositionAnimationUsingAnchor />,
+            },
         ],
     },
     {
@@ -27,6 +32,7 @@ const router = createBrowserRouter([
             },
         ],
     },
+
     {
         path: '*',
         element: <div>Not found</div>,
