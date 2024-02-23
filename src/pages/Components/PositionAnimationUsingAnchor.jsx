@@ -1,5 +1,6 @@
 import { animate } from 'framer-motion';
 import { useRef } from 'react';
+import HomeButton from '../../components/HomeButton';
 import { PrimaryButton } from '../../components/common/Buttons';
 import ExternalLink from '../../components/common/ExternalLink';
 import { Layout } from '../../components/common/Layouts';
@@ -75,6 +76,8 @@ export default function PositionAnimationUsingAnchor() {
                     </div>
                 </Section>
             </div>
+
+            <HomeButton />
         </Layout>
     );
 }
