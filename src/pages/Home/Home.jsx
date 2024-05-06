@@ -1,6 +1,3 @@
-import Link from '../../components/common/Link';
-import content from './content.json';
-
 export default function Home() {
     return (
         <div className="h-screen overflow-auto">
@@ -74,43 +71,47 @@ export default function Home() {
                         </h3>
                         <ul className="list-disc ml-8">
                             <li>
-                                <a href="https://github.com/moshfiqrony">
+                                <a
+                                    className="text-blue-500 hover:underline hover:text-blue-700"
+                                    href="https://github.com/moshfiqrony"
+                                >
                                     GitHub
                                 </a>
                             </li>
                             <li>
-                                <a href="https://stackoverflow.com/users/9418800/moshfiqrony">
+                                <a
+                                    className="text-blue-500 hover:underline hover:text-blue-700"
+                                    href="https://stackoverflow.com/users/9418800/moshfiqrony"
+                                >
                                     Stack Overflow
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/moshfiqrony">
+                                <a
+                                    className="text-blue-500 hover:underline hover:text-blue-700"
+                                    href="https://twitter.com/moshfiqrony"
+                                >
                                     Twitter
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/moshfiqrony/">
+                                <a
+                                    className="text-blue-500 hover:underline hover:text-blue-700"
+                                    href="https://www.linkedin.com/in/moshfiqrony/"
+                                >
                                     Linkedin
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <h3 className="text-xl font-semibold my-4 mt-8">
-                        RND/Playground/Portfolio
-                    </h3>
-                    <ul className="list-disc ml-8">
-                        {content.rnd_playground_portfolio.projects.map(
-                            (project) => (
-                                <li key={project.id}>
-                                    <Link to={project.link}>
-                                        {project.title}
-                                    </Link>
-                                </li>
-                            )
-                        )}
-                    </ul>
+                <div className="flex justify-center w-100 mt-4">
+                    <a
+                        href="https://m-cube-dashboard.vercel.app"
+                        className="text-xl font-semibold my-4 mt-8 text-blue-500 hover:underline hover:text-blue-700"
+                    >
+                        Explore my RND/Playground/Portfolio
+                    </a>
                 </div>
             </div>
         </div>
