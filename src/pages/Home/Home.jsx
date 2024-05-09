@@ -252,7 +252,7 @@ export default function Home() {
                     }
                     id="contact"
                 >
-                    <div className="!mt-[-28px] flex items-center space-x-4 justify-center gap-8">
+                    <div className="!mt-[-28px] flex items-center flex-wrap space-x-4 justify-center gap-8">
                         {contactItems.map((item) => (
                             <a
                                 className="text-gray-50 hover:text-gray-300"
