@@ -74,17 +74,29 @@ export default function Home() {
                 </section>
                 <Section heading={'About Me'} id="about">
                     <p className="text-lg md:text-xl text-justify">
+                        I am based in Bangladesh, a developing country. However,
+                        I believe that the opportunity to learn is as accessible
+                        to me as it is to anyone else in the world. I always
+                        myself to prove as a key competitor globally. I have{' '}
+                        <strong>4.5K+</strong> reputation in Stackoverflow with{' '}
+                        <strong>2.5M+</strong> reach. I also love to work on
+                        open source projects.
+                    </p>
+
+                    <p className="text-lg md:text-xl text-justify">
                         As a frontend-focused full stack engineer, I have a deep
                         passion for creating visually stunning and highly
                         interactive web applications. With a strong foundation
-                        in HTML, CSS, and JavaScript, I excel at crafting
-                        responsive and user-friendly interfaces that deliver an
-                        exceptional user experience.
+                        in <strong>JavaScript</strong> and{' '}
+                        <strong>Python</strong>, I excel at crafting responsive
+                        and user-friendly interfaces, stable, secure and
+                        scalable backend APIs that deliver an exceptional user
+                        experience.
                     </p>
                     <p className="text-lg md:text-xl text-justify">
                         Beyond my technical expertise, I'm also a creative
                         problem-solver who thrives on tackling complex
-                        challenges. I stay up-to-date with the latest web
+                        challenges.I stay up-to-date with the latest web
                         development trends and technologies, constantly
                         exploring new ways to push the boundaries of what's
                         possible on the web.
