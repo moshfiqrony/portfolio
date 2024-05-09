@@ -146,21 +146,25 @@ export default function Home() {
                                             {item.title}
                                         </h3>
                                         <div className="flex justify-between items-center">
-                                            <a
-                                                href={item.githubUrl}
-                                                className="flex items-center space-x-2"
-                                            >
-                                                <SiGithub className="h-5 w-5" />
-                                                <span className="text-sm text-gray-400">
-                                                    View on GitHub
-                                                </span>
-                                            </a>
-                                            <a
-                                                className="inline-flex h-8 items-center justify-center rounded-md bg-gray-50 px-4 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                                                href={item.liveUrl}
-                                            >
-                                                Live Demo
-                                            </a>
+                                            {item.githubUrl && (
+                                                <a
+                                                    href={item.githubUrl}
+                                                    className="flex items-center space-x-2"
+                                                >
+                                                    <SiGithub className="h-5 w-5" />
+                                                    <span className="text-sm text-gray-400">
+                                                        View on GitHub
+                                                    </span>
+                                                </a>
+                                            )}
+                                            {item.liveUrl && (
+                                                <a
+                                                    className="inline-flex h-8 items-center justify-center rounded-md bg-gray-50 px-4 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
+                                                    href={item.liveUrl}
+                                                >
+                                                    Live Demo
+                                                </a>
+                                            )}
                                         </div>
                                     </div>
                                 </div>

@@ -227,25 +227,40 @@ export const workItems = [
         liveUrl: 'https://m-cube-dashboard.vercel.app/',
     },
     {
+        id: 'bn-react-dev.vercel.app',
+        title: 'React documentation website in Bengali',
+        photo: '/projects/react-bengali-documentation-website.png',
+        githubUrl: 'https://github.com/reactjs/bn.react.dev',
+        liveUrl: 'https://bn-react-dev.vercel.app/',
+    },
+    {
+        id: 'react-redux-tailwind-boilerplate',
+        title: 'React Redux Tailwind boilerplate',
+        photo: '/projects/react-redux-tailwind-boilerplate.png',
+        githubUrl:
+            'https://github.com/moshfiqrony/react-redux-tailwind-boilerplate',
+        liveUrl: null,
+    },
+    {
         id: 'work-3',
         title: 'UseDisclosure hook with isAlive state(Coming soon)',
         photo: '/placeholder.svg',
-        githubUrl: '#',
-        liveUrl: '#',
+        githubUrl: '',
+        liveUrl: '',
     },
     {
         id: 'work-4',
         title: 'Opening portal animation(Coming soon)',
         photo: '/placeholder.svg',
-        githubUrl: '#',
-        liveUrl: '#',
+        githubUrl: '',
+        liveUrl: '',
     },
     {
         id: 'work-5',
         title: 'Position animation using anchor(Coming soon)',
         photo: '/placeholder.svg',
-        githubUrl: '#',
-        liveUrl: '#',
+        githubUrl: '',
+        liveUrl: '',
     },
 ];
 
