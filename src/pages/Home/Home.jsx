@@ -50,7 +50,7 @@ export default function Home() {
                             Full Stack Software Engineer |{' '}
                             <a href="https://worklife.so">Worklife Inc.</a>
                         </p>
-                        <div className="flex flex-row flex-wrap gap-16 text-gray-100 justify-center text-[60px] pt-16 pb-16">
+                        <div className="flex flex-row flex-wrap gap-16 text-gray-100 justify-center text-[30px] md:text-[60px] pt-16 pb-16">
                             <SiJavascript /> <SiReact /> <SiPython />{' '}
                             <SiDjango /> <SiPostgresql /> <SiMicrosoftazure />{' '}
                             <SiAmazonaws />
