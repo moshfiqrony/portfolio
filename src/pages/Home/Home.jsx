@@ -91,7 +91,7 @@ export default function Component() {
                         <p className="text-xl md:text-2xl text-gray-300">
                             Full Stack Software Engineer
                         </p>
-                        <div className="flex flex-row gap-16 text-gray-100 justify-center text-[60px] pt-16 pb-16">
+                        <div className="flex flex-row flex-wrap gap-16 text-gray-100 justify-center text-[60px] pt-16 pb-16">
                             <SiJavascript /> <SiReact /> <SiPython />{' '}
                             <SiDjango /> <SiPostgresql /> <SiMicrosoftazure />{' '}
                             <SiAmazonaws />
@@ -339,7 +339,7 @@ export default function Component() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             <Card className="bg-gray-900 rounded-lg overflow-hidden group">
-                                <a className="block" to="#">
+                                <div className="flex flex-col h-full">
                                     <img
                                         alt="Project 1"
                                         className="w-full h-auto object-cover object-center transition-transform duration-500 group-hover:scale-105 rounded-t-lg"
@@ -352,7 +352,7 @@ export default function Component() {
                                         }}
                                         width={600}
                                     />
-                                    <div className="p-6 space-y-4">
+                                    <div className="p-6 space-y-4 flex flex-col justify-between flex-1">
                                         <h3 className="text-2xl font-bold">
                                             Dashboard with top nav
                                         </h3>
@@ -374,10 +374,10 @@ export default function Component() {
                                             </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </Card>
                             <Card className="bg-gray-900 rounded-lg overflow-hidden group">
-                                <a className="block" to="#">
+                                <div className="flex flex-col h-full">
                                     <img
                                         alt="Project 2"
                                         className="w-full h-auto object-cover object-center transition-transform duration-500 group-hover:scale-105 rounded-t-lg"
@@ -390,7 +390,7 @@ export default function Component() {
                                         }}
                                         width={600}
                                     />
-                                    <div className="p-6 space-y-4">
+                                    <div className="p-6 space-y-4 flex flex-col justify-between flex-1">
                                         <h3 className="text-2xl font-bold">
                                             Dashboard with sidebar
                                         </h3>
@@ -412,10 +412,10 @@ export default function Component() {
                                             </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </Card>
                             <Card className="bg-gray-900 rounded-lg overflow-hidden group">
-                                <a className="block" to="#">
+                                <div className="flex flex-col h-full">
                                     <img
                                         alt="Project 3"
                                         className="w-full h-auto object-cover object-center transition-transform duration-500 group-hover:scale-105"
@@ -427,9 +427,10 @@ export default function Component() {
                                         }}
                                         width={600}
                                     />
-                                    <div className="p-6 space-y-4">
+                                    <div className="p-6 space-y-4 flex flex-col justify-between flex-1">
                                         <h3 className="text-2xl font-bold">
-                                            Project 3
+                                            UseDisclosure hook with isAlive
+                                            state(Coming soon)
                                         </h3>
                                         <div className="flex justify-between items-center">
                                             <a
@@ -443,13 +444,13 @@ export default function Component() {
                                             </a>
                                             <a
                                                 className="inline-flex h-8 items-center justify-center rounded-md bg-gray-50 px-4 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-gray-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                                                to="#"
+                                                href="#"
                                             >
                                                 Live Demo
                                             </a>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </Card>
                         </div>
                     </div>
@@ -468,7 +469,7 @@ export default function Component() {
                                 engineer in different companies.
                             </p>
                         </div>
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h3 className="text-2xl font-bold">
                                     Software Engineer
