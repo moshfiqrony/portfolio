@@ -30,6 +30,7 @@ import {
     SiShadcnui,
     SiSlack,
     SiSocketdotio,
+    SiStackoverflow,
     SiStripe,
     SiTailwindcss,
     SiUbuntu,
@@ -40,7 +41,7 @@ import Card from '../../components/common/Card';
 
 export default function Component() {
     return (
-        <div className="flex flex-col min-h-[100dvh]">
+        <div className="flex flex-col min-h-[100dvh] bg-gray-950">
             <header className="fixed top-0 left-0 w-full z-50 bg-gray-950 text-gray-50 px-4 lg:px-6 h-14 flex items-center">
                 <a className="flex items-center justify-center" href="">
                     <CodeIcon className="h-6 w-6" />
@@ -79,7 +80,7 @@ export default function Component() {
                     </a>
                 </nav>
             </header>
-            <main className="flex-1">
+            <main className="flex-1 max-w-[1200px] mx-auto">
                 <section
                     className="w-full h-[100dvh] flex items-center justify-center bg-gray-950 relative overflow-hidden"
                     id="hero"
@@ -89,7 +90,8 @@ export default function Component() {
                             Md. Moshfiqur Rahman Rony
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-300">
-                            Full Stack Software Engineer
+                            Full Stack Software Engineer |{' '}
+                            <a href="https://worklife.so">Worklife Inc.</a>
                         </p>
                         <div className="flex flex-row flex-wrap gap-16 text-gray-100 justify-center text-[60px] pt-16 pb-16">
                             <SiJavascript /> <SiReact /> <SiPython />{' '}
@@ -117,12 +119,12 @@ export default function Component() {
                     className="w-full py-24 md:py-32 lg:py-40 bg-gray-950 text-gray-50 justify-center flex"
                     id="about"
                 >
-                    <div className="container px-4 md:px-6 grid grid-cols-1 gap-12 items-center max-w-[929px]">
+                    <div className="container px-4 md:px-6 grid grid-cols-1 gap-12 items-center">
                         <div className="space-y-6">
                             <h2 className="text-4xl md:text-5xl font-bold text-center">
                                 About Me
                             </h2>
-                            <p className="text-lg md:text-xl text-center">
+                            <p className="text-lg md:text-xl text-justify">
                                 As a frontend-focused full stack engineer, I
                                 have a deep passion for creating visually
                                 stunning and highly interactive web
@@ -131,7 +133,7 @@ export default function Component() {
                                 responsive and user-friendly interfaces that
                                 deliver an exceptional user experience.
                             </p>
-                            <p className="text-lg md:text-xl text-center">
+                            <p className="text-lg md:text-xl text-justify">
                                 Beyond my technical expertise, I'm also a
                                 creative problem-solver who thrives on tackling
                                 complex challenges. I stay up-to-date with the
@@ -252,6 +254,12 @@ export default function Component() {
                                 <SiOpenai className="h-12 w-12" />
                                 <span className="text-lg font-medium">
                                     OpenAI API
+                                </span>
+                            </div>
+                            <div className="flex flex-col items-center space-y-2">
+                                <SiGithub className="h-12 w-12" />
+                                <span className="text-lg font-medium">
+                                    GitHub API
                                 </span>
                             </div>
                             <div className="flex flex-col items-center space-y-2">
@@ -580,6 +588,10 @@ export default function Component() {
                                 <h3 className="text-2xl font-bold">
                                     Software Engineer Intern
                                 </h3>
+                                <div className="text-gray-100 flex flex-row gap-2">
+                                    <SiReact /> <SiDjango /> <SiPostgresql />
+                                    <SiRedux /> <SiReactrouter />
+                                </div>
                                 <p className="text-lg text-gray-400">
                                     <a
                                         href="https://www.mpower-social.com/"
@@ -645,6 +657,15 @@ export default function Component() {
                                 social media channels.
                             </p>
                             <div className="flex items-center space-x-4 justify-center gap-8">
+                                <a
+                                    className="text-gray-50 hover:text-gray-300"
+                                    href="https://stackoverflow.com/users/9418800/moshfiqrony"
+                                >
+                                    <SiStackoverflow className="h-8 w-8" />
+                                    <span className="sr-only">
+                                        StackOverflow
+                                    </span>
+                                </a>
                                 <a
                                     className="text-gray-50 hover:text-gray-300"
                                     href="https://twitter.com/moshfiqrony"
