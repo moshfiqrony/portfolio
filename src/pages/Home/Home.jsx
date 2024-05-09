@@ -76,8 +76,8 @@ export default function Home() {
                     <p className="text-lg md:text-xl text-justify">
                         I am based in Bangladesh, a developing country. However,
                         I believe that the opportunity to learn is as accessible
-                        to me as it is to anyone else in the world. I always
-                        myself to prove as a key competitor globally. I have{' '}
+                        to me as it is to anyone else in the world. I always try
+                        to prove myself as a key competitor globally. I have{' '}
                         <strong>4.5K+</strong> reputation in Stackoverflow with{' '}
                         <strong>2.5M+</strong> reach. I also love to work on
                         open source projects.
